@@ -1,4 +1,5 @@
 # /apps/frontend/Dockerfile
+
 FROM node:20-alpine AS base-build
 RUN apk update && apk add --no-cache libc6-compat
  
