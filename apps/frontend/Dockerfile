@@ -1,5 +1,8 @@
 # TODO: 前端 Dockerfile
+<<<<<<< HEAD
 # TODO: 前端 Dockerfile
+=======
+>>>>>>> 705bc064979c121bb061fa627750b22d4c1be18e
 FROM node:20-alpine AS base-build
 RUN apk update && apk add --no-cache libc6-compat
 
@@ -41,4 +44,8 @@ COPY --from=installer --chown=nextjs:nodejs /app/apps/frontend/.next/standalone 
 COPY --from=installer --chown=nextjs:nodejs /app/apps/frontend/.next/static ./apps/frontend/.next/static 
 COPY --from=installer --chown=nextjs:nodejs /app/apps/frontend/public ./apps/frontend/public
 
+<<<<<<< HEAD
 CMD ["node", "apps/frontend/server.js"]
+=======
+CMD ["node", "apps/frontend/server.js"]
+>>>>>>> 705bc064979c121bb061fa627750b22d4c1be18e
