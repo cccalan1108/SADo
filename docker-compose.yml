@@ -20,7 +20,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - MONGODB_URI=mongodb://mongo:27017/todo
+      - MONGODB_URI=mongodb://mongo:27019/todo
       - PORT=5000
     depends_on:
       - mongo
@@ -29,7 +29,7 @@ services:
   mongo:
     image: mongo:latest
     ports:
-      - "27017:27017"
+      - "27019:27019"
     volumes:
       - todo-db-data:/data/db
     restart: always
